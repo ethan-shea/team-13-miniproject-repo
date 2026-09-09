@@ -11,10 +11,10 @@ composition, roles, and the tasks at hand.
 
 | Role | Named Members |
 |------|---------|
-| Mechanical Engineering | |
-| Electrical Engineering | |
-| Computer Engineering | |
-| Biomedical Engineering | |
+| Mechanical Engineering |x|
+| Electrical Engineering |1|
+| Computer Engineering |5|
+| Biomedical Engineering |x|
 
 ---
 
