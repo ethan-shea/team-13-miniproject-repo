@@ -41,9 +41,7 @@ def start_timer():
 
     # Move hand to full position
     move_hand_to(HAND_RANGE_STEPS)
-
     last_update = time.ticks_ms()
-
     state = STATE_RUNNING
 
     print("Timer started:", selected_minutes, "minutes")
@@ -51,9 +49,7 @@ def start_timer():
 
 def reset_timer():
     global state
-
     move_hand_to(0)
-
     state = STATE_IDLE
 
     print("Timer reset")
