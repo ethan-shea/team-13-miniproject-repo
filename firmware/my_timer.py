@@ -2,6 +2,12 @@
 # TIMER
 # ============================================================
 
+import time
+from motor import move_hand_to, HAND_RANGE_STEPS
+
+PRESETS = [15, 20, 25, 30]
+preset_index = 0
+
 STATE_IDLE = 0
 STATE_RUNNING = 1
 STATE_FINISHED = 2
