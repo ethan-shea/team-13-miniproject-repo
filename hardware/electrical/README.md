@@ -10,3 +10,6 @@ Bill of Materials are provided by instructors in the [Google Drive](https://driv
 
 ### Setup Picture
 Just a picture showing the prototype.
+
+---
+[<- Back To Main Readme](../README.md)
