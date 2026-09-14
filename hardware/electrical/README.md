@@ -12,4 +12,4 @@ Bill of Materials are provided by instructors in the [Google Drive](https://driv
 Just a picture showing the prototype.
 
 ---
-[<- Back To Main Readme](../README.md)
+[<- Back To Main Readme](../../README.md)
