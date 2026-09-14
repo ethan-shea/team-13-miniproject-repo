@@ -28,6 +28,10 @@ composition, roles, and the tasks at hand.
 │   └── mechanical/    # Enclosure CAD files and fabrication notes
 └── docs/              # Project documentation 
 ```
+## Quick links
+
+[Firmware](firmware) - Codes that controls everything\
+[Hardware](hardware) - Everything related to components and connections\
 
 ---
 
@@ -35,8 +39,9 @@ composition, roles, and the tasks at hand.
 
 | Component | Notes |
 |-----------|-------|
-| Thing 1 | Thing 1 notes  |
-| Thing 2 | Thing 2 notes  |
+| 1188-SM-5VDC-DRV-ND Motor | Coil sequence Blue → Pink → Yellow → Orange  |
+| 1188-SM-5VDC-DRV-ND Motor | 0 - coil on; 1 - coil off in the motor control sequence |
+
 
 ---
 
