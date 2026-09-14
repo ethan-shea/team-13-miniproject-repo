@@ -1,5 +1,5 @@
 # Electrical
-## Sub-folder of [Hardware](../../hardware), all electrical related documentation are in this folder.
+## Sub-folder of [hardware](../../hardware), all electrical related documents are in this folder.
 
 ### Electrical Schematic/Wiring Diagram 
 Tinkercad wiring layout. The Arduino Uno and 6-wire stepper shown are visual substitutes for the Seeed XIAO ESP32-S3
