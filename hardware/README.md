@@ -7,7 +7,7 @@ All files and documentation related to hardware design can be found here.
 
 ### Electrical
 [Wiring Diagram](./electrical/MiniProject_1_Wiring_Diagram.jpg)\
-[BOM](./electrical/README.md)\
+[BOM](./electrical/Minproject-BOM-2026.xlsx)\
 [Setup Picture](./electrical/mini-project_setup.jpg)
 
 ---
