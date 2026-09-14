@@ -35,8 +35,10 @@ composition, roles, and the tasks at hand.
 
 | Component | Notes |
 |-----------|-------|
-| Thing 1 | Thing 1 notes  |
-| Thing 2 | Thing 2 notes  |
+| 5536-L293DN-ND Motor Driver | Vcc1&Vcc2 logic inputs work with 3.3V; No 5V input needed   |
+| 1188-SM-5VDC-DRV-ND Motor | Coil sequence Blue → Pink → Yellow → Orange  |
+| 1188-SM-5VDC-DRV-ND Motor | O - coil on; 1 - coil off in the motor control sequence |
+
 
 ---
 
