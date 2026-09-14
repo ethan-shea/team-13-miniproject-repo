@@ -31,7 +31,7 @@ composition, roles, and the tasks at hand.
 ## Quick links
 
 [Firmware](firmware) - Codes that controls everything\
-[Hardware](hardware) - Everything related to components and connections\
+[Hardware](hardware) - Everything related to components and connections
 
 ---
 
