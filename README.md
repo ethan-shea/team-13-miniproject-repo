@@ -28,6 +28,10 @@ composition, roles, and the tasks at hand.
 │   └── mechanical/    # Enclosure CAD files and fabrication notes
 └── docs/              # Project documentation 
 ```
+## Quick links
+
+[Firmware](firmware) - Codes that controls everything\
+[Hardware](hardware) - Everything related to components and connections\
 
 ---
 
