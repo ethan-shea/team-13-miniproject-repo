@@ -3,7 +3,7 @@
 # ============================================================
 
 import time
-from motor import move_hand_to, HAND_RANGE_STEPS
+import motor
 
 PRESETS = [15, 20, 25, 30]
 preset_index = 0
@@ -46,7 +46,7 @@ def start_timer():
     remaining_ms = timer_duration_ms
 
     # Move hand to full position
-    move_hand_to(HAND_RANGE_STEPS)
+    motor.move_hand_to(motor.HAND_RANGE_STEPS)
     last_update = time.ticks_ms()
     state = STATE_RUNNING
 
@@ -54,8 +54,11 @@ def start_timer():
 
 
 def reset_timer():
-    global state
-    move_hand_to(0)
+    global state, timer_duration_ms, remaining_ms, last_update
+    motor.move_hand_to(0)
+    timer_duration_ms = selected_minutes * 60 * 1000
+    remaining_ms = timer_duration_ms
+    last_update = time.ticks_ms()
     state = STATE_IDLE
 
     print("Timer reset")

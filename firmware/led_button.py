@@ -1,12 +1,12 @@
 from machine import Pin, PWM
 import time
 
-button1 = Pin(5, Pin.IN, Pin.PULL_UP)
-button2 = Pin(6, Pin.IN, Pin.PULL_UP)
+button1 = Pin(5, Pin.IN, Pin.PULL_UP)  # XIAO D4; switch to GND
+button2 = Pin(6, Pin.IN, Pin.PULL_UP)  # XIAO D5; switch to GND
 
-red_led = PWM(Pin(7))
-blue_led = PWM(Pin(8))
-green_led = PWM(Pin(9))
+red_led = PWM(Pin(7))    # XIAO D8
+blue_led = PWM(Pin(8))   # XIAO D9
+green_led = PWM(Pin(9))  # XIAO D10
 
 red_led.freq(1000)
 blue_led.freq(1000)
@@ -16,6 +16,7 @@ DEBOUNCE_MS = 50
 
 
 def set_leds(red, blue, green):
+    # Argument order is RED, BLUE, GREEN to match the existing callers.
     red_led.duty_u16(int(red * 65535))
     blue_led.duty_u16(int(blue * 65535))
     green_led.duty_u16(int(green * 65535))
@@ -49,3 +50,7 @@ def wait_for_release(button):
     while button_pressed(button):
         time.sleep_ms(10)
     time.sleep_ms(DEBOUNCE_MS)
+
+
+# Start with a defined PWM state when the module is imported.
+set_leds(0, 0, 0)

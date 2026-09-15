@@ -3,10 +3,8 @@ import motor
 import led_button
 import my_timer
 
-print("Meeting timer ready")
-print("Selected:", my_timer.selected_minutes, "minutes")
-
-while True:
+def update():
+    """Handle one pass through the existing button/timer/LED state machine."""
 
     # --------------------------------------------------------
     # IDLE
@@ -45,7 +43,7 @@ while True:
             motor.move_hand_to(0)
             my_timer.state = my_timer.STATE_FINISHED
             print("TIME'S UP!")
-            continue
+            return
 
         # Update clock hand position
         fraction_remaining = my_timer.remaining_ms / my_timer.timer_duration_ms
@@ -79,4 +77,26 @@ while True:
                 led_button.wait_for_release(led_button.button2)
                 my_timer.reset_timer()
 
-    time.sleep_ms(10)
+
+def run():
+    try:
+        motor.initialize()
+        my_timer.reset_timer()
+        print("Meeting timer ready")
+        print("Set the pointer's zero reference before pressing Start.")
+        print("Hand travel:", motor.HAND_RANGE_STEPS, "steps (check calibration)")
+        print("Selected:", my_timer.selected_minutes, "minutes")
+
+        while True:
+            update()
+            time.sleep_ms(10)
+    finally:
+        # Cleanup also runs when Thonny sends KeyboardInterrupt.
+        try:
+            motor.motor_off()
+        finally:
+            led_button.set_leds(0, 0, 0)
+
+
+if __name__ == "__main__":
+    run()
