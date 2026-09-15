@@ -8,14 +8,14 @@ motor_pins = [
     Pin(4, Pin.OUT)
 ]
 
-HAND_RANGE_STEPS = 4096
-STEP_DELAY_MS = 3
+HAND_RANGE_STEPS = 2048
+STEP_DELAY_MS = 5
 
 step_sequence = [
-    [1, 0, 0, 0],
-    [0, 1, 0, 0],
-    [0, 0, 1, 0],
-    [0, 0, 0, 1]
+    [1, 1, 1, 0],
+    [1, 0, 1, 1],
+    [1, 1, 0, 1],
+    [0, 1, 1, 1]
 ]
 
 motor_step_index = 0
