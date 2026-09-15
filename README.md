@@ -40,7 +40,7 @@ composition, roles, and the tasks at hand.
 | Component | Notes |
 |-----------|-------|
 | 1188-SM-5VDC-DRV-ND Motor | Coil sequence Blue → Pink → Yellow → Orange  |
-| 1188-SM-5VDC-DRV-ND Motor | 0 - coil on; 1 - coil off in the motor control sequence |
+| 1188-SM-5VDC-DRV-ND Motor | 0 - coil on; 1 - coil off active low motor |
 
 
 ---
